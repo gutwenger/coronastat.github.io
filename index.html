@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <!-- D3 js-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <title>Coronavirus Stat</title>
+</head>
+<body>
+    <div id="main-container" class="">
+        <div id="title" class="">CoronaStat</div>
+        <div id="select" class="">
+            <select id="select-menu" class="selection">
+                <option selected="selected" disabled>Select Country</option>
+                <option disabled>--- Asia ---</option>
+                <option value="0">South Korea</option>
+                <option value="1">Taiwan</option>
+                <option value="2">Japan</option>
+                <option value="3">Singapore</option>
+                <option disabled>--- Europe ---</option>
+                <option value="4">Italy</option>
+                <option value="5">Spain</option>
+                <option value="6">Portugal</option>
+                <option value="7">Germany</option>
+            </select>
+        </div>
+        <div id="chart" class=""></div>
+        <div id="info" class="border">
+            <p id="info-title">information</p>
+            <p id="info-country">select country above</p>
+            <table id="info-table">
+                <tr>
+                    <th class="info-table-cell">Confirmed</td>
+                    <th>Death</td>
+                    <th>Recovery</td>
+                    <th>Active</td>
+                </tr>
+                <tr>
+                    <th id="info-table-confirmed" class="info-table-result">1000</td>
+                    <th id="info-table-death" class="info-table-result">1000</td>
+                    <th id="info-table-recovery" class="info-table-result">1000</td>
+                    <th id="info-table-active" class="info-table-result">1000</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
